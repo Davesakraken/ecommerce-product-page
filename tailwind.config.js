@@ -2,7 +2,16 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        orange: "var(--Orange)",
+        paleOrange: "var(--paleOrange)",
+        darkBlue: "var(--DarkBlue)",
+        grayishBlue: "var(--grayishBlue)",
+        lightGrayishBlue: "var(--lightGrayishBlue)",
+        black: "var(--black)",
+      },
+    },
   },
   plugins: [],
 };
