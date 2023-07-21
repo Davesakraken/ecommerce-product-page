@@ -1,10 +1,11 @@
+import ItemListing from "./components/ItemListing/itemListing";
 import NavBar from "./components/Navbar/Navbar";
 
 function App() {
   return (
     <>
       <NavBar />
-      <main></main>
+      <ItemListing />
     </>
   );
 }

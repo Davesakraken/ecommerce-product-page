@@ -1,26 +1,30 @@
-import { Logo, CartIcon } from "../svg";
-import AvatarImage from "../../assets/image-avatar.png";
+import { Logo } from "../svg";
+import BurgerMenu from "./BurgerMenu";
+import Cart from "./Cart";
 
 export default function Navbar() {
+  // Styles
+  const navButtonStyles = "hover:text-black hover:border-b-5 border-b-orange-default";
+  const navItems = ["Collections", "Men", "Women", "About", "Contact"];
+
   return (
-    <section className="h-22 flex justify-around mt-6 items-center">
-      <div className="flex border-b gap-80 items-center pb-10">
-        <div className="flex gap-8">
+    // outter container
+    <section className="flex w-full lg:justify-center">
+      {/* inner container */}
+      <div className="flex h-[4.3rem] bg-white w-full justify-around lg:h-auto lg:gap-10 lg:w-auto lg:border-b xl:gap-80">
+        {/* nav section */}
+        <div className="flex items-center lg:gap-8 lg:items-start lg:pt-10">
+          <BurgerMenu />
           <Logo />
           <nav>
-            <ul className="flex gap-10 pl-6">
-              <li>Collections</li>
-              <li>Men</li>
-              <li>Women</li>
-              <li>About</li>
-              <li>Contact</li>
+            <ul className="hidden gap-10 pl-6 lg:flex lg:h-20">
+              {navItems.map((i) => (
+                <li className={navButtonStyles}>{i}</li>
+              ))}
             </ul>
           </nav>
         </div>
-        <div className="flex gap-12 items-center">
-          <CartIcon />
-          <img className="w-12" src={AvatarImage} alt="avatar" />
-        </div>
+        <Cart />
       </div>
     </section>
   );
