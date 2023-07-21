@@ -1,8 +1,8 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { MenuIcon } from "../svg";
 
 export default function BurgerMenu() {
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
