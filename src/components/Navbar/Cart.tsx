@@ -12,7 +12,7 @@ export default function Navbar() {
   const toggleCartMenu = () => setIsOpen((currentValue) => !currentValue);
 
   return (
-    <div className="relative flex items-center gap-5 lg:pb-3 lg:gap-12">
+    <div className="flex items-center gap-5 lg:relative lg:pb-3 lg:gap-12">
       <div onClick={toggleCartMenu}>
         <CartIcon />
       </div>
