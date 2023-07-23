@@ -1,4 +1,4 @@
-import { CartIcon } from "../svg";
+import { CartIcon } from "../Svgs";
 import AvatarImage from "../../assets/image-avatar.png";
 import { useState } from "react";
 import CartMenu from "./CartMenu";

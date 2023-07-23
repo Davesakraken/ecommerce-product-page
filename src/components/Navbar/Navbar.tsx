@@ -1,4 +1,4 @@
-import { Logo } from "../svg";
+import { Logo } from "../Svgs";
 import BurgerMenu from "./BurgerMenu";
 import Cart from "./Cart";
 

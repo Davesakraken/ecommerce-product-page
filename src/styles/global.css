@@ -18,6 +18,24 @@ body {
     font-family: "Kumbh Sans";
 }
 
+h1 {
+    font-size: 44px;
+    font-weight: bold;
+    color: var(--veryDarkBlue);
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--orange);
+}
+
 nav>ul>li {
     color: var(--grayishBlue);
     cursor: pointer;
