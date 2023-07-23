@@ -19,7 +19,9 @@ export default function Navbar() {
           <nav>
             <ul className="hidden gap-10 pl-6 lg:flex lg:h-20">
               {navItems.map((i) => (
-                <li className={navButtonStyles}>{i}</li>
+                <li key={i} className={navButtonStyles}>
+                  {i}
+                </li>
               ))}
             </ul>
           </nav>

@@ -4,7 +4,7 @@ import PictureGallery from "./PictureGallery";
 export default function itemListing() {
   return (
     <main>
-      <div className="grid grid-cols-2 gap-12 lg:mx-[24vw] mt-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-28 lg:mx-[24vw] mt-20">
         <div>
           <PictureGallery />
         </div>
