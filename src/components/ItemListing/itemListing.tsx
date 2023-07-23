@@ -1,5 +1,5 @@
 import ListingDetails from "./ListingDetails";
-import PictureGallery from "./PictureGallery";
+import PictureGallery from "./ListingDetails";
 
 export default function ItemListing() {
   return (
