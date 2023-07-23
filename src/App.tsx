@@ -1,4 +1,4 @@
-import ItemListing from "./components/itemListing/ItemListing";
+import ItemListing from "./components/Item_listing/ItemListing";
 import NavBar from "./components/navbar/Navbar";
 
 function App() {
