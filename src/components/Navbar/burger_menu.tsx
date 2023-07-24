@@ -1,4 +1,4 @@
-import { MenuIcon } from "../Svgs";
+import { MenuIcon } from "../svgs";
 
 export default function BurgerMenu() {
   return (

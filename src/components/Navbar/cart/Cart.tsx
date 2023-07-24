@@ -1,7 +1,7 @@
-import { CartIcon } from "../../Svgs";
+import { CartIcon } from "../../svgs";
 // import AvatarImage from "../../../assets/image-avatar.png";
 import { useState } from "react";
-import CartMenu from "./CartMenu";
+import CartMenu from "./cart_menu";
 
 export default function Navbar() {
   // styles
@@ -16,7 +16,7 @@ export default function Navbar() {
       <div onClick={toggleCartMenu}>
         <CartIcon />
       </div>
-      <img className={`w-7 xl:w-12 ${AvatarImageStyles}`} src="/image-avatar.png" alt="avatar" />
+      <img className={`w-7 xl:w-12 ${AvatarImageStyles}`} src="./image-avatar.png" alt="avatar" />
 
       {isOpen && <CartMenu />}
     </div>
