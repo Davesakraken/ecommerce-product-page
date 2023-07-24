@@ -1,7 +1,7 @@
 import { CartIcon } from "../../svgs";
 // import AvatarImage from "../../../assets/image-avatar.png";
 import { useState } from "react";
-import CartMenu from "./cart_menu";
+import CartMenu from "./cartMenu";
 
 export default function Navbar() {
   // styles
