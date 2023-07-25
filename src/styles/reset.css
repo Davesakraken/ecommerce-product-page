@@ -28,7 +28,6 @@ html:focus-within {
 
 body {
     text-rendering: optimizeSpeed;
-    line-height: 1.5;
 }
 
 a:not([class]) {
@@ -39,13 +38,6 @@ img,
 picture {
     max-width: 100%;
     display: block;
-}
-
-input,
-button,
-textarea,
-select {
-    font: inherit;
 }
 
 @media (prefers-reduced-motion: reduce) {

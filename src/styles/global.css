@@ -36,6 +36,12 @@ h3 {
     color: var(--orange);
 }
 
+@layer components {
+    button {
+        @apply select-none font-bold text-orange-default pb-1 h-full text-[30px];
+    }
+}
+
 nav>ul>li {
     color: var(--grayishBlue);
     cursor: pointer;

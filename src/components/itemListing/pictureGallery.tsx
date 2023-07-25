@@ -17,13 +17,11 @@ export default function PictureGallery() {
   };
 
   return (
-    <main>
-      <div className="grid grid-cols-4 gap-7">
-        <img className="col-span-full mb-2 rounded-2xl" src={currentImage} alt="" />
-        {images.map((i) => (
-          <img key={i} onClick={() => handleImageClick(i)} className={PreviewStyling} src={i} />
-        ))}
-      </div>
-    </main>
+    <div className="grid grid-cols-4 gap-7 max-w-[30rem] min-w-[25rem]">
+      <img className="col-span-full mb-2 rounded-2xl" src={currentImage} alt="" />
+      {images.map((i) => (
+        <img key={i} onClick={() => handleImageClick(i)} className={PreviewStyling} src={i} />
+      ))}
+    </div>
   );
 }
