@@ -24,7 +24,7 @@ export default {
           dark: "var(--darkGrayishBlue)",
           veryDark: "var(--veryDarkBlue)",
         },
-        transparentBlack: "var(--black)",
+        transparentBlack: "var(--transparentBlack)",
       },
       animation: {
         wiggle: "wiggle 500ms ease-in-out 100ms",

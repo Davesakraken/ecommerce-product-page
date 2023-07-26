@@ -1,7 +1,6 @@
-import AddButton from "./productControls/addButton";
-import QuantityControls from "./productControls/quantityControl";
+import ProductControls from "./productControls/productControls";
 
-export default function PictureGallery() {
+export default function ListingDetails() {
   return (
     <article className="w-[27rem]">
       <section className="mb-8 mt-14">
@@ -19,10 +18,7 @@ export default function PictureGallery() {
         </div>
         <h2 className="line-through text-blue-grayish">$250.00</h2>
       </section>
-      <section className="flex mt-10">
-        <AddButton />
-        <QuantityControls />
-      </section>
+      <ProductControls />
     </article>
   );
 }

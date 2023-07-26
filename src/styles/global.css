@@ -10,7 +10,7 @@
         --darkGrayishBlue: hsl(217, 9%, 45%);
         --grayishBlue: hsl(220, 14%, 75%);
         --lightGrayishBlue: hsl(223, 64%, 98%);
-        --transparentBlack: hsla(0, 0%, 0% 75%);
+        --transparentBlack: hsla(0, 0%, 0%, 75%);
     }
 }
 
@@ -38,7 +38,7 @@ h3 {
 
 @layer components {
     button {
-        @apply select-none font-bold text-orange-default pb-1 h-full text-[30px];
+        @apply select-none font-bold w-10 text-[1.5rem] pb-[3px] text-orange-default h-full;
     }
 }
 
