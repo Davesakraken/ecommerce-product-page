@@ -1,5 +1,5 @@
 import ItemListing from "./components/itemListing/itemListing";
-// import LightBox from "./components/lightbox/lightbox";
+import LightBox from "./components/lightbox/lightbox";
 import NavBar from "./components/navBar/navbar";
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <>
       <NavBar />
       <ItemListing />
-      {/* <LightBox /> */}
+      <LightBox />
     </>
   );
 }

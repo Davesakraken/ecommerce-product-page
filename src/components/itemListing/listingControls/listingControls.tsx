@@ -1,4 +1,4 @@
-import AddButton from "./addButton";
+import AddButton from "./addToCartButton";
 import QuantityControls from "./quantityControls";
 
 export default function ProductControls() {

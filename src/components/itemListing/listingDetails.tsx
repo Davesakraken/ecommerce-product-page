@@ -1,11 +1,11 @@
-import ProductControls from "./productControls/productControls";
+import ProductControls from "./listingControls/listingControls";
 
 export default function ListingDetails() {
   return (
     <article className="w-[27rem]">
-      <section className="mb-8 mt-14">
+      <section className="mb-8 mt-16">
         <h3 className="mb-4">SNEAKER COMPANY</h3>
-        <h1 className="mb-10">Fall Limited Edition Sneakers</h1>
+        <h1 className="mb-9">Fall Limited Edition Sneakers</h1>
         <p>
           These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand
           everything the weather can offer.
