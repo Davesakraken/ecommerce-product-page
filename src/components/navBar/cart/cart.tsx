@@ -2,6 +2,7 @@ import { CartIcon } from "../../svgs";
 // import AvatarImage from "../../../assets/image-avatar.png";
 import { useState } from "react";
 import CartMenu from "./cartMenu";
+import QuantityIndecator from "./cartNotification";
 
 export default function Navbar() {
   // styles
@@ -13,6 +14,7 @@ export default function Navbar() {
 
   return (
     <div className="flex items-center gap-5 lg:relative lg:pb-3 lg:gap-12">
+      <QuantityIndecator />
       <div onClick={toggleCartMenu}>
         <CartIcon />
       </div>
