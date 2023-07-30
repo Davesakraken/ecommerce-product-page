@@ -1,10 +1,9 @@
-import { CartIcon } from "../../svgs";
-// import AvatarImage from "../../../assets/image-avatar.png";
 import { useState } from "react";
-import CartMenu from "./cartMenu";
-import QuantityIndecator from "./cartNotification";
+import { CartIcon } from "@/components/svgs";
+import CartMenu from "@/components/navBar/cart/cartMenu";
+import QuantityIndecator from "@/components/navBar/cart/cartNotification";
 
-export default function Navbar() {
+export default function CartSection() {
   // styles
   const AvatarImageStyles = "rounded-full cursor-pointer hover:outline outline-orange-default select-none";
 

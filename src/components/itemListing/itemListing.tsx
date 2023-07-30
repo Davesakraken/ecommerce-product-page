@@ -1,5 +1,5 @@
-import ListingDetails from "./listingDetails";
-import PictureGallery from "./pictureGallery";
+import ListingDetails from "@/components/itemListing/listingDetails";
+import PictureGallery from "@/components/itemListing/pictureGallery";
 
 interface props {
   openLightbox: () => void;

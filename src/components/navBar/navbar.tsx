@@ -1,6 +1,6 @@
-import { Logo } from "../svgs";
-import BurgerMenu from "./burgerMenu";
-import Cart from "./cart/cart";
+import { Logo } from "@/components/svgs";
+import BurgerMenu from "@/components/navBar/burgerMenu";
+import Cart from "@/components/navBar/cart/cart";
 
 export default function Navbar() {
   // Styles

@@ -1,4 +1,4 @@
-import ProductControls from "./listingControls/listingControls";
+import ListingControls from "@/components/itemListing/listingControls/listingControls";
 
 export default function ListingDetails() {
   return (
@@ -18,7 +18,7 @@ export default function ListingDetails() {
         </div>
         <h2 className="line-through text-blue-grayish">$250.00</h2>
       </section>
-      <ProductControls />
+      <ListingControls />
     </article>
   );
 }
