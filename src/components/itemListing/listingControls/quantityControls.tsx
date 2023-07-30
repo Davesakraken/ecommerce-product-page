@@ -19,7 +19,7 @@ export default function QuantityControls() {
       <button onClick={decrementAmmount} type="button">
         -
       </button>
-      <p className="font-bold text-center">{quantity}</p>
+      <p className="font-bold text-center text-black">{quantity}</p>
       <button onClick={incrementAmmount} type="button">
         +
       </button>

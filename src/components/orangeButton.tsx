@@ -1,6 +1,6 @@
 import { CartIcon } from "@/components/svgs";
 
-export default function QuantityControls() {
+export default function OrangeButton() {
   return (
     <div className="flex items-center justify-center gap-2 w-60 h-12 select-none bg-orange-default rounded-lg cursor-pointer shadow-md shadow-orange-pale">
       <CartIcon viewBox="0 -5 25 30" classname="fill-current text-white" />
