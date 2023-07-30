@@ -1,10 +1,10 @@
 import { useState } from "react";
 
-import ProductOne from "../../assets/image-product-1.jpg";
-import ProductTwo from "../../assets/image-product-2.jpg";
-import ProductThree from "../../assets/image-product-3.jpg";
-import ProductFour from "../../assets/image-product-4.jpg";
-import NavigationArrows from "../lightbox/navigationArrows";
+import ProductOne from "@/assets/image-product-1.jpg";
+import ProductTwo from "@/assets/image-product-2.jpg";
+import ProductThree from "@/assets/image-product-3.jpg";
+import ProductFour from "@/assets/image-product-4.jpg";
+import NavigationArrows from "@/components/lightbox/navigationArrows";
 
 interface props {
   width: string;

@@ -1,4 +1,4 @@
-import { CartIcon } from "components/svgs";
+import { CartIcon } from "@/components/svgs";
 
 export default function QuantityControls() {
   return (

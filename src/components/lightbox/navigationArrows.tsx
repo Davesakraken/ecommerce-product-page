@@ -1,4 +1,4 @@
-import { PreviousIcon, NextIcon } from "../svgs";
+import { PreviousIcon, NextIcon } from "@/components/svgs";
 
 interface props {
   handleClick: (index: number) => void;

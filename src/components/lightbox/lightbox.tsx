@@ -1,5 +1,5 @@
-import PictureGallery from "../itemListing/pictureGallery";
-import { CloseIcon } from "../svgs";
+import PictureGallery from "@/components/itemListing/pictureGallery";
+import { CloseIcon } from "@/components/svgs";
 
 interface props {
   closeLightbox: () => void;
