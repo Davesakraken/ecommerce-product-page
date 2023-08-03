@@ -1,13 +1,13 @@
-import { useState } from "react";
+import { useCart } from "@/context/cartContext";
 
 export default function CartNotification() {
-  const [quantity, setquantity] = useState(0);
+  const { products } = useCart();
 
-  if (!quantity) return;
+  if (!products) return;
 
   return (
     <div className="absolute top-[38px] text-center left-[10px] w-[18px] h-[13px] rounded-xl bg-orange-default select-none">
-      <p className="text-white font-bold text-[9px]">{quantity}</p>
+      <p className="text-white font-bold text-[9px]">{products}</p>
     </div>
   );
 }
