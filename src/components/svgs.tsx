@@ -1,6 +1,7 @@
 interface props {
   classname?: string;
   viewBox?: string;
+  onClick?: () => void;
 }
 
 export const Logo = () => {
@@ -39,9 +40,10 @@ export const CloseIcon = ({ classname, viewBox }: props) => {
   );
 };
 
-export const DeleteIcon = ({ classname, viewBox }: props) => {
+export const DeleteIcon = ({ classname, viewBox, onClick }: props) => {
   return (
     <svg
+      onClick={onClick}
       className={`cursor-pointer ${classname}`}
       width="24"
       height="28"

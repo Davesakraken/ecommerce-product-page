@@ -3,6 +3,8 @@ import LightBox from "@/components/lightbox/lightbox";
 import NavBar from "@/components/navBar/navbar";
 import { useState } from "react";
 import Attribution from "@/components/attribution";
+import QuantityProvider from "@/context/quantityContext";
+import CartProvider from "@/context/cartContext";
 
 function App() {
   const [close, setClose] = useState(false);
@@ -17,10 +19,14 @@ function App() {
 
   return (
     <>
-      <NavBar />
-      <ItemListing openLightbox={openLightbox} />
-      {close && <LightBox closeLightbox={closeLightbox} />}
-      <Attribution />
+      <CartProvider>
+        <QuantityProvider>
+          <NavBar />
+          <ItemListing openLightbox={openLightbox} />
+          <>{close ? <LightBox closeLightbox={closeLightbox} /> : null}</>
+          <Attribution />
+        </QuantityProvider>
+      </CartProvider>
     </>
   );
 }
