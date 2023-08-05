@@ -14,7 +14,14 @@
     }
 }
 
+#root {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
 body {
+    height: 100%;
     font-family: "Kumbh Sans";
 }
 
