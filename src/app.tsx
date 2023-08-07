@@ -1,10 +1,12 @@
-import ItemListing from "@/components/itemListing/itemListing";
-import LightBox from "@/components/lightbox/lightbox";
-import NavBar from "@/components/navBar/navbar";
 import { useState } from "react";
+// components
+import ItemListing from "@/components/itemListing/itemListing";
+import LightBox from "@/components/lightbox";
+import NavBar from "@/components/navBar/navbar";
 import Attribution from "@/components/attribution";
-import QuantityProvider from "@/context/quantityContext";
-import CartProvider from "@/context/cartContext";
+// ContextProviders
+import QuantityProvider from "@/hooks/quantityContext";
+import CartProvider from "@/hooks/cartContext";
 
 function App() {
   const [close, setClose] = useState(false);

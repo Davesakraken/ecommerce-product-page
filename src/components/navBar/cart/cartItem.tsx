@@ -1,7 +1,7 @@
 import OrangeButton from "@/components/orangeButton";
 import { DeleteIcon } from "@/components/svgs";
 import ImgThumbnail from "@/assets/image-product-1-thumbnail.jpg";
-import { useCart } from "@/context/cartContext";
+import { useCart } from "@/hooks/cartContext";
 
 export default function CartItem() {
   const { products, setProducts } = useCart();
@@ -21,10 +21,11 @@ export default function CartItem() {
             Fall Limited Edition Sneakers <br /> $125.00 x {products} <span className="font-bold text-black">${total}.00</span>
           </p>
         </div>
-        <DeleteIcon onClick={cartItemGoByeBye} classname="fill-current text-blue-grayish pt-[6px]" />
+        <DeleteIcon onClick={cartItemGoByeBye} additionalClassNames="fill-current text-blue-grayish pt-[6px]" />
       </div>
-      <div className="flex justify-center">
+      <div className="flex mx-5">
         <OrangeButton
+          classNames="h-10 w-full"
           onClick={() => {
             ("");
           }}
