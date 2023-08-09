@@ -1,4 +1,4 @@
-import { useCart } from "@/context/cartContext";
+import { useCart } from "@/hooks/cartContext";
 
 export default function CartNotification() {
   const { products } = useCart();
@@ -6,7 +6,7 @@ export default function CartNotification() {
   if (!products) return;
 
   return (
-    <div className="absolute top-[38px] text-center left-[10px] w-[18px] h-[13px] rounded-xl bg-orange-default select-none">
+    <div className="relative top-[-9px] left-[48px] lg:left-[77px] lg:top-[-9px] text-center  w-[18px] h-[13px] rounded-xl bg-orange-default select-none">
       <p className="text-white font-bold text-[9px]">{products}</p>
     </div>
   );

@@ -1,8 +1,8 @@
 import QuantityControls from "@/components/itemListing/listingControls/quantityControls";
 import OrangeButton from "@/components/orangeButton";
 import { CartIcon } from "@/components/svgs";
-import { useQuantity } from "@/context/quantityContext";
-import { useCart } from "@/context/cartContext";
+import { useQuantity } from "@/hooks/quantityContext";
+import { useCart } from "@/hooks/cartContext";
 
 export default function ListingControls() {
   const { quantity, setQuantity } = useQuantity();
@@ -15,9 +15,14 @@ export default function ListingControls() {
   };
 
   return (
-    <section className="flex justify-between mt-10">
+    <section className="flex flex-wrap justify-between mt-10">
       <QuantityControls />
-      <OrangeButton onClick={handleAddToCart} text="Add to cart" icon={<CartIcon classname="fill-current text-white" />} />
+      <OrangeButton
+        classNames="w-full sm:w-60 h-14 sm:h-12"
+        onClick={handleAddToCart}
+        text="Add to cart"
+        icon={<CartIcon additionalClassNames="fill-current text-white" />}
+      />
     </section>
   );
 }
