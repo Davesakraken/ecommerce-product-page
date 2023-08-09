@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { CartIcon } from "@/components/svgs";
 import CartMenu from "@/components/navBar/cart/cartMenu";
-import QuantityNotification from "@/components/navBar/cart/cartNotification";
+import CartNotification from "@/components/navBar/cart/cartNotification";
 
 export default function CartSection() {
   // styles
@@ -12,8 +12,8 @@ export default function CartSection() {
   const toggleCartMenu = () => setIsOpen((currentValue) => !currentValue);
 
   return (
-    <div className="flex items-center gap-5 lg:relative lg:pb-3 lg:gap-12">
-      <QuantityNotification />
+    <div className="flex items-center gap-5 relative lg:pb-3 lg:gap-12">
+      <CartNotification />
       <div onClick={toggleCartMenu}>
         <CartIcon />
       </div>
