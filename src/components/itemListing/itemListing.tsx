@@ -1,6 +1,6 @@
 import ListingDetails from "@/components/itemListing/listingDetails";
 import PictureGallery from "@/components/pictureGallery/pictureGallery";
-import { useIsMobile } from "@/hooks/mobileQuery";
+import { useIsMobile, useIsLightbox } from "@/hooks/MediaQuerys";
 
 interface props {
   openLightbox: () => void;
@@ -8,6 +8,7 @@ interface props {
 
 export default function ItemListing({ openLightbox }: props) {
   const isMobile = useIsMobile();
+  const isLightbox = useIsLightbox();
 
   return (
     <main>
@@ -22,7 +23,7 @@ export default function ItemListing({ openLightbox }: props) {
           positionLeft="left-[3vw]"
           positionRight="right-[3vw]"
           openLightbox={
-            isMobile
+            isLightbox
               ? () => {
                   return;
                 }

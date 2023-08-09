@@ -9,7 +9,7 @@ interface props {
 
 export default function NavigationArrows({ handleClick, currentIndex, positionLeft, positionRight }: props) {
   //styles
-  const arrowIcons = "cursor-pointer absolute w-12 h-12 top-56 lg:top-[19rem] rounded-full bg-white lg:w-14 lg:h-14";
+  const arrowIcons = "cursor-pointer absolute w-12 h-12 top-[40%] lg:top-[35%] rounded-full bg-white lg:w-14 lg:h-14";
 
   return (
     <>

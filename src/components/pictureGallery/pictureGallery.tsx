@@ -55,7 +55,7 @@ export default function PictureGallery({
 
   return (
     <>
-      <div className={`grid grid-col-1 justify-items-center ${gap} ${width}`}>
+      <div className={`grid grid-col-1 justify-items-center relative ${gap} ${width}`}>
         {navArrows && (
           <NavigationArrows
             handleClick={handleLightBoxArrows}
@@ -64,7 +64,11 @@ export default function PictureGallery({
             positionRight={positionRight}
           />
         )}
-        <img onClick={openLightbox} className="cursor-pointer select-none col-span-full mb-2 sm:rounded-2xl" src={currentImage} />
+        <img
+          onClick={openLightbox}
+          className="object-cover w-full h-[20rem] sm:h-auto cursor-pointer select-none col-span-full mb-2 sm:rounded-2xl"
+          src={currentImage}
+        />
         {thumbnails && (
           <div className={`flex ${thumbnailGroupProperties} ${width}`}>
             {images.map((i) => (

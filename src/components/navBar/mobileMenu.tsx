@@ -15,7 +15,9 @@ export default function MobileMenu({ onClose }: MobileMenuProps) {
           <nav className="pt-9">
             <ul className="">
               {listItems.map((e) => (
-                <li className="text-black text-lg font-bold py-3">{e}</li>
+                <li key={e} className="text-black text-lg font-bold py-3">
+                  {e}
+                </li>
               ))}
             </ul>
           </nav>

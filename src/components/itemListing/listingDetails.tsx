@@ -1,5 +1,5 @@
 import ListingControls from "@/components/itemListing/listingControls/listingControls";
-import { useIsMobile } from "@/hooks/mobileQuery";
+import { useIsMobile } from "@/hooks/MediaQuerys";
 
 export default function ListingDetails() {
   const isMobile = useIsMobile();
