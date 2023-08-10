@@ -72,12 +72,13 @@ export default function PictureGallery({
         {thumbnails && (
           <div className={`flex ${thumbnailGroupProperties} ${width}`}>
             {images.map((i) => (
-              <img
-                key={i}
-                onClick={() => handleImageClick(i)}
-                className={`${currentImage === i ? activeImage : ""} ${PreviewStyling}`}
-                src={i}
-              />
+              <div key={i} className="relative">
+                <div
+                  onClick={() => handleImageClick(i)}
+                  className={`absolute inset-0 bg-white opacity-0 hover:opacity-50 ${PreviewStyling}`}
+                ></div>
+                <img className={`${currentImage === i ? activeImage : ""} ${PreviewStyling}`} src={i} />
+              </div>
             ))}
           </div>
         )}
