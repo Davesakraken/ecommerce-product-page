@@ -8,12 +8,12 @@ export default function CartMenu() {
   const cartMenuHeaderStyles = "border-b font-bold h-16 pl-5";
 
   // layouts
-  const DesktopLayout = "lg:h-[15rem] lg:left-[-20rem] lg:w-[22.5rem] lg:h-[14.5rem] lg:translate-x-32 lg:right-0 lg:top-24";
+  const DesktopLayout = "lg:absolute lg:h-[15rem] lg:w-[22.5rem] lg:h-[14.5rem] lg:top-24 lg:left-[-15rem] 2xl:left-[-10rem]";
 
   const { products } = useCart();
 
   return (
-    <div className={`absolute flex flex-col gap-5 left-[2vw] top-20 w-[95vw] h-[20rem] z-30  ${DesktopLayout} ${containerStyles}`}>
+    <div className={`absolute flex flex-col gap-5 left-[5vw] top-20 w-[90vw] h-[17rem] z-30 ${DesktopLayout} ${containerStyles}`}>
       <div className={`flex items-center ${cartMenuHeaderStyles}`}>Cart</div>
       {!products ? <CartEmpty /> : <CartItem />}
     </div>
