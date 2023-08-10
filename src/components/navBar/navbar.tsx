@@ -11,7 +11,7 @@ export default function Navbar() {
     // outter container
     <section className="flex w-full lg:justify-center">
       {/* inner container */}
-      <div className="flex h-[4.3rem] bg-white w-full justify-around lg:h-auto lg:gap-10 lg:w-auto lg:border-b xl:gap-[25rem]">
+      <div className="flex h-[4.3rem] bg-white w-full justify-around lg:h-auto lg:gap-10 lg:w-auto lg:border-b xl:gap-[15rem]">
         {/* nav section */}
         <div className="flex items-center lg:gap-8 lg:items-start lg:pt-10">
           <BurgerMenu />

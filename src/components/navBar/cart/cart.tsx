@@ -13,13 +13,14 @@ export default function CartSection() {
 
   return (
     <>
+      <div></div>
       <div className="lg:relative flex items-center gap-5 lg:pb-3 lg:gap-12">
-        <CartNotification />
-        <div onClick={toggleCartMenu}>
+        {isOpen && <CartMenu />}
+        <div onClick={toggleCartMenu} className="relative">
           <CartIcon />
         </div>
         <img className={`w-7 xl:w-12 ${AvatarImageStyles}`} src="./image-avatar.png" alt="avatar" />
-        {isOpen && <CartMenu />}
+        <CartNotification />
       </div>
     </>
   );
