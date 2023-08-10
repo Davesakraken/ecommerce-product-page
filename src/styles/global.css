@@ -44,7 +44,7 @@ h3 {
 }
 
 p {
-    color: var(--grayishBlue)
+    color: var(--darkGrayishBlue)
 }
 
 @layer components {
@@ -54,6 +54,6 @@ p {
 }
 
 nav>ul>li {
-    color: var(--grayishBlue);
+    color: var(--darkGrayishBlue);
     cursor: pointer;
 }
