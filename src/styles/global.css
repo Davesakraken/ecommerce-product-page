@@ -10,7 +10,8 @@
         --darkGrayishBlue: hsl(217, 9%, 45%);
         --grayishBlue: hsl(220, 14%, 75%);
         --lightGrayishBlue: hsl(223, 64%, 98%);
-        --transparentBlack: hsla(0, 0%, 0%, 75%);
+        --transparentBlack: hsla(0, 0%, 0%, 0.75);
+        --transparentwhite: hsla(0, 0%, 100%, 0.75);
     }
 }
 

@@ -32,7 +32,7 @@ export default function PictureGallery({
   positionRight,
   openLightbox,
 }: props) {
-  const PreviewStyling = `cursor-pointer rounded-xl hover:opacity-50 mx-[.1rem] select-none  ${thumbnailWidth}`;
+  const PreviewStyling = `cursor-pointer bg-white rounded-xl mx-[.1rem] select-none ${thumbnailWidth}`;
   const activeImage = `outline outline-2 outline-orange-default`;
 
   const [currentImage, setImage] = useState(ProductOne);

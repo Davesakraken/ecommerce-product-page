@@ -10,7 +10,7 @@ export default function LightBox({ closeLightbox }: props) {
     <div>
       <div className="absolute top-[12vh] right-[32.5vw] z-10">
         <div onClick={closeLightbox} className="flex justify-end pb-3">
-          <CloseIcon additionalClassNames=" text-white w-10 h-10" viewBox="0 0 5 23" />
+          <CloseIcon additionalClassNames="text-white w-10 h-10" viewBox="0 0 5 23" />
         </div>
         <PictureGallery
           width="w-[35rem]"

@@ -12,7 +12,7 @@ export default function CartSection() {
   const toggleCartMenu = () => setIsOpen((currentValue) => !currentValue);
 
   return (
-    <div className="flex items-center gap-5 lg:relative lg:pb-3 lg:gap-12">
+    <div className="flex items-center gap-5 relative lg:pb-3 lg:gap-12">
       <CartNotification />
       <div onClick={toggleCartMenu}>
         <CartIcon />
